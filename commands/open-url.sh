@@ -15,3 +15,5 @@
 # @raycast.authorURL https://github.com/insomnia-creator
 
 open $1
+
+echo "Opened!"
