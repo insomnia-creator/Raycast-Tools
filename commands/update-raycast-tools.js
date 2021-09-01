@@ -1,18 +1,21 @@
+/*
 #!/usr/bin/env node
 
-// Required parameters:
-// @raycast.schemaVersion 1
-// @raycast.title Update Raycast Tools
-// @raycast.mode fullOutput
+//// Required parameters:
+//// @raycast.schemaVersion 1
+//// @raycast.title Update Raycast Tools
+//// @raycast.mode fullOutput
 
-// Optional parameters:
-// @raycast.icon ⬇️
+//// Optional parameters:
+//// @raycast.icon ⬇️
 
-// Documentation:
-// @raycast.description Update Raycast Tools by downloading from the official repository.
-// @raycast.author CorsairRGB 16gb DDR4 3200MHz RAM
-// @raycast.authorURL https://github.com/insomnia-creator
+//// Documentation:
+//// @raycast.description Update Raycast Tools by downloading from the official repository.
+//// @raycast.author CorsairRGB 16gb DDR4 3200MHz RAM
+//// @raycast.authorURL https://github.com/insomnia-creator
+ */
 
+//disabled for now!
 const {exec} = require('child_process');
 
 const current_directory = __dirname.slice(0, __dirname.indexOf("/commands"));

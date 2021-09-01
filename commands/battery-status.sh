@@ -2,15 +2,15 @@
 
 # Required parameters:
 # @raycast.schemaVersion 1
-# @raycast.title Screensaver
-# @raycast.mode silent
+# @raycast.title Battery Status
+# @raycast.mode fullOutput
 
 # Optional parameters:
-# @raycast.icon 💤
+# @raycast.icon 🔋
 
 # Documentation:
-# @raycast.description Start the screensaver!
+# @raycast.description Gives you a status of your battery!
 # @raycast.author CorsairRGB 16gb DDR4 3200MHz RAM
 # @raycast.authorURL https://github.com/insomnia-creator
 
-open '/System/Library/CoreServices/ScreenSaverEngine.app'
+echo $(pmset -g batt)

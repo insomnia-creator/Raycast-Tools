@@ -2,15 +2,17 @@
 
 # Required parameters:
 # @raycast.schemaVersion 1
-# @raycast.title Screensaver
+# @raycast.title Reset TouchBar
 # @raycast.mode silent
 
 # Optional parameters:
-# @raycast.icon 💤
+# @raycast.icon 🔁
 
 # Documentation:
-# @raycast.description Start the screensaver!
+# @raycast.description Reset the Touchbar if one exists.
 # @raycast.author CorsairRGB 16gb DDR4 3200MHz RAM
 # @raycast.authorURL https://github.com/insomnia-creator
-
-open '/System/Library/CoreServices/ScreenSaverEngine.app'
+pkill "Touch Bar agent"
+killall ControlStrip
+echo "Reset TouchBar"
+# if you aren't on a macbook pro, just disable this :)

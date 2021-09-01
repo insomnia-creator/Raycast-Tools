@@ -2,15 +2,16 @@
 
 # Required parameters:
 # @raycast.schemaVersion 1
-# @raycast.title Screensaver
+# @raycast.title Copy date and time
 # @raycast.mode silent
 
 # Optional parameters:
-# @raycast.icon 💤
+# @raycast.icon 🕘
 
 # Documentation:
-# @raycast.description Start the screensaver!
+# @raycast.description Copy the current date and time(via ‘date’)
 # @raycast.author CorsairRGB 16gb DDR4 3200MHz RAM
 # @raycast.authorURL https://github.com/insomnia-creator
 
-open '/System/Library/CoreServices/ScreenSaverEngine.app'
+echo "Copied $(date)"
+date | pbcopy
