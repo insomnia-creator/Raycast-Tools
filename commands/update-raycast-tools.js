@@ -15,7 +15,7 @@
 
 const {exec} = require('child_process');
 
-const current_directory = __dirname.slice(0, indexOf("/commands"));
+const current_directory = __dirname.slice(0, __dirname.indexOf("/commands"));
 const dir_to_download = current_directory.slice(0, current_directory.indexOf("/Raycast-Tools/"))
 console.log("Directory to remove." + current_directory);
 
