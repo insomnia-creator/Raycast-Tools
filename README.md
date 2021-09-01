@@ -23,7 +23,14 @@ Then now in extensions click the '+' button and 'Add script directory'
 
 ![screenshot of extension tab](./screenshots/open_dir.png)
 
-Choose the folder you git clon-ed to. Then open raycast again by quitting preferences. And voila! 
+Choose the folder you git clon-ed to, then select the folder as the 'commands' directory.. Then open raycast again by quitting preferences. And voila! 
 
 
-#haha
+
+#How do I disable a command???
+
+
+If you hate one of my commands so dearly that you want to crush it into a non-existent oblivion:
+
+Simply go to le 'git cloned' folder and delete the command file. In this case you don't want the
+open folder command so just delete the command in ./commands folder. ('open-folder.js')
