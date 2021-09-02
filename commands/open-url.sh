@@ -16,4 +16,4 @@
 
 open $1
 
-echo "Opened!"
+echo "Opened!"x

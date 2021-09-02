@@ -26,7 +26,8 @@ const sudoRespsUpperCase = new Set("Y", 'YES', 'YE', 'YEAH', 'TRUE', 'T');
 if(sudoResps.has(sudo) || sudoRespsUpperCase.has(sudo) || command.startsWith("sudo")){
     exec(`osascript -e 'do shell script "${command}" with administrator privileges'`, (error, stdout, stderr) => {
         if(error){
-            console.log(`\x1b[30;41m${error}\x1b[0m`)
+            console.log(`\x1b[30;41m${error}\x1b[0m`);
+            //note you will need to activate raycast window again.
         } else {
             console.log(stdout);
             
