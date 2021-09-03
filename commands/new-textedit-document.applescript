@@ -39,6 +39,12 @@ on run argv
           make new document
           log "Made a new Word document!"
         end tell
+   else if platform = "bean" then
+          tell application "Bean"
+            activate
+            make new document
+            log "Made a new Word document!"
+          end tell
   end if
 
 
