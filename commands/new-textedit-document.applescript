@@ -45,6 +45,12 @@ on run argv
             make new document
             log "Made a new Word document!"
           end tell
+    else if platform = "coteditor" then
+                  tell application "CotEditor"
+                    activate
+                    make new document
+                    log "Made a new Word document!"
+                  end tell
   end if
 
 
